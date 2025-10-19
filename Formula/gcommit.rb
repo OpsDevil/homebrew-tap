@@ -1,14 +1,15 @@
 class Gcommit < Formula
   include Language::Python::Virtualenv
 
-  desc "AI-powered CLI that writes perfect Git commit messages for you."
+  desc "AI-powered CLI that writes perfect Git commit messages for you"
   homepage "https://github.com/OpsDevil/gcommit"
   url "https://github.com/OpsDevil/gcommit/archive/refs/tags/v0.1.0.tar.gz"
   sha256 "855054ffd8361b9cafcd0243407904a101f1268f757ec312d6bdb37f36c5a13d"
   license "MIT"
 
-  depends_on "python@3.12"
   depends_on "rust" => :build
+  depends_on "libyaml"
+  depends_on "python@3.12"
 
   resource "annotated-types" do
     url "https://files.pythonhosted.org/packages/ee/67/531ea369ba64dcff5ec9c3402f9f51bf748cec26dde048a2f973a4eea7f5/annotated_types-0.7.0.tar.gz"
