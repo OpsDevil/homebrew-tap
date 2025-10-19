@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Python / build artifacts (если заливаешь формулы, которые билдят питон)
+*.pyc
+__pycache__/
+
+# Homebrew bottles (если будешь выкладывать)
+*.bottle.*
+*.tar.gz
+
+# IDE / tooling
+.vscode/
+.idea/
+
+# Temp
+tmp/
+dist/
+build/
