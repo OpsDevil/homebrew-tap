@@ -7,6 +7,12 @@ class Gcommit < Formula
   sha256 "855054ffd8361b9cafcd0243407904a101f1268f757ec312d6bdb37f36c5a13d"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/OpsDevil/homebrew-tap/releases/download/gcommit-0.1.0"
+    sha256 cellar: :any,                 arm64_tahoe:  "bd5b90ffd8ccba13cbb45f3f119ebbf71cb58c2ce8de00586d80adf7da83f179"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "15ee2a5cea806987a1091ed84ccec51fe976c4ea5c3217fa062870c3766565de"
+  end
+
   depends_on "rust" => :build
   depends_on "libyaml"
   depends_on "python@3.12"
