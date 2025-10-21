@@ -8,9 +8,9 @@ class Gcommit < Formula
   license "MIT"
 
   bottle do
-    root_url "https://github.com/OpsDevil/homebrew-tap/releases/download/gcommit-0.1.0"
-    sha256 cellar: :any,                 arm64_tahoe:  "bd5b90ffd8ccba13cbb45f3f119ebbf71cb58c2ce8de00586d80adf7da83f179"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "15ee2a5cea806987a1091ed84ccec51fe976c4ea5c3217fa062870c3766565de"
+    root_url "https://github.com/OpsDevil/homebrew-tap/releases/download/gcommit-0.1.1"
+    sha256 cellar: :any,                 arm64_tahoe:  "d79765e5e404a43c184a265aa897aa1aec17fa6e9bdbecbe523345cba4ca2090"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "4466138098b8df8189cf6097f98d9a65010fd1a8ccf3be7aea641c4d163d27de"
   end
 
   depends_on "rust" => :build
