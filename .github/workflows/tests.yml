@@ -10,8 +10,8 @@ jobs:
   test-bot:
     strategy:
       matrix:
-        os: [ ubuntu-22.04, macos-13, macos-26 ]
-    runs-on: ${{ matrix.os }}
+        os: [ubuntu-22.04, macos-26, macos-amd]
+    runs-on: ${{ matrix.os == 'macos-amd' && fromJson('["self-hosted","macOS","X64"]') || matrix.os }}
     permissions:
       actions: read
       checks: read
