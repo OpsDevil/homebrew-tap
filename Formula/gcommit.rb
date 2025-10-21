@@ -4,7 +4,7 @@ class Gcommit < Formula
   desc "AI-powered CLI that writes perfect Git commit messages for you"
   homepage "https://github.com/OpsDevil/gcommit"
   url "https://github.com/OpsDevil/gcommit/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "a7009c0f83d9638e51738c9e703c9035b41aceb426532f97a51cda91c65fe75a"
+  sha256 "d1f77e750d7a22bb00501d24a9ccc6deb5e6fc65ef1f2f00e255c4afb90b782b"
   license "MIT"
 
   bottle do
