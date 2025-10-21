@@ -10,8 +10,8 @@ jobs:
   test-bot:
     strategy:
       matrix:
-        os: [ubuntu-22.04, macos-26, macos-amd]
-    runs-on: ${{ matrix.os == 'macos-amd' && fromJson('["self-hosted","macOS","X64"]') || matrix.os }}
+        os: [ ubuntu-22.04, macos-15-intel, macos-26 ]
+    runs-on: ${{ matrix.os }}
     permissions:
       actions: read
       checks: read
@@ -36,6 +36,7 @@ jobs:
       - run: brew test-bot --only-setup
 
       - run: brew test-bot --only-tap-syntax
+
       - run: brew test-bot --only-formulae
         if: github.event_name == 'pull_request'
 
