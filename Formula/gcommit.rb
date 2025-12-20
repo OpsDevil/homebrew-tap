@@ -3,15 +3,9 @@ class Gcommit < Formula
 
   desc "AI-powered CLI that writes perfect Git commit messages for you"
   homepage "https://github.com/OpsDevil/gcommit"
-  url "https://github.com/OpsDevil/gcommit/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "d1f77e750d7a22bb00501d24a9ccc6deb5e6fc65ef1f2f00e255c4afb90b782b"
+  url "https://github.com/OpsDevil/gcommit/archive/refs/tags/v0.1.2.tar.gz"
+  sha256 "cf6cd1ee429fbca509244b7dcc80f8d4f8f07c60d2aa82cb2748f6d934e93a0f"
   license "MIT"
-
-  bottle do
-    root_url "https://github.com/OpsDevil/homebrew-tap/releases/download/gcommit-0.1.1"
-    sha256 cellar: :any,                 arm64_tahoe:  "d79765e5e404a43c184a265aa897aa1aec17fa6e9bdbecbe523345cba4ca2090"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "4466138098b8df8189cf6097f98d9a65010fd1a8ccf3be7aea641c4d163d27de"
-  end
 
   depends_on "rust" => :build
   depends_on "libyaml"
